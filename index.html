@@ -301,19 +301,19 @@
             const btn = document.getElementById('btn')
 
             function sendEmail(){
-                console.log('am i working');
+                // console.log('am i working');
                 Email.send({
                     Host : "smtp.elasticemail.com",
                     Username : "creativesolutin01@gmail.com",
                     Password : "794E45933608D3D4873C0AC0501B7001CC16",
                     To : 'creativesolutin01@gmail.com',
-                    From : `${mail.value}`,
+                    From : 'creativesolutin01@gmail.com',
                     Subject : "New Enquiry From Contact Form",
                     Body : `<b>Name:</b> ${ nameInput.value}<br>
                             <b>Email:</b> ${ mail.value}<br>
                             <b>Message:</b> ${ msg.value}`
                     }).then(
-                message => alert(message)
+                message => alert('message Sent succesfully')
                 );
             }
 
