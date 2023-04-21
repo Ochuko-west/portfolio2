@@ -718,7 +718,7 @@ for mobile phones */
 		flex-direction: column;
 		gap: 1rem;
 		width: 85vw;
-		height: 25vh;
+		height: 23vhh;
 	}
 	.card-item > img{
 		max-width: 100%;
